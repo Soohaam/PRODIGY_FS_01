@@ -1,0 +1,55 @@
+.admin-login-container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .admin-login-title {
+    margin-bottom: 20px;
+    color: #333;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .admin-login-field {
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .admin-login-button {
+    margin-top: 20px;
+    animation: pulse 1s infinite;
+  }
+  
+  .admin-login-error {
+    margin-top: 10px;
+    color: #f44336;
+    animation: fadeInUp 2s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

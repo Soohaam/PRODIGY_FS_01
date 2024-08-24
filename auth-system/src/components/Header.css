@@ -1,0 +1,58 @@
+.header-container {
+    position: relative;
+  }
+  
+  .floating-circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; 
+    z-index: 1;
+    overflow: hidden; 
+  }
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .circle:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+  }
+  
+  .circle:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    top: 40%;
+    left: 50%;
+    animation-delay: 2s;
+  }
+  
+  .circle:nth-child(3) {
+    width: 200px;
+    height: 200px;
+    top: 70%;
+    left: 80%;
+    animation-delay: 4s;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
